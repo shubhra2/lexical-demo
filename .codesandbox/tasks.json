@@ -1,0 +1,488 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "npm install",
+      "name": "Installing Dependencies"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "npm run start",
+      "runAtStart": false
+    },
+    "start:website": {
+      "name": "start:website",
+      "command": "npm run start:website",
+      "runAtStart": false
+    },
+    "start:playground": {
+      "name": "start:playground",
+      "command": "npm run start:playground",
+      "runAtStart": false
+    },
+    "dev": {
+      "name": "dev",
+      "command": "npm run dev",
+      "runAtStart": true
+    },
+    "start-test-server": {
+      "name": "start-test-server",
+      "command": "npm run start-test-server",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build",
+      "runAtStart": false
+    },
+    "build-prod": {
+      "name": "build-prod",
+      "command": "npm run build-prod",
+      "runAtStart": false
+    },
+    "build-playground-dev": {
+      "name": "build-playground-dev",
+      "command": "npm run build-playground-dev",
+      "runAtStart": false
+    },
+    "build-playground-prod": {
+      "name": "build-playground-prod",
+      "command": "npm run build-playground-prod",
+      "runAtStart": false
+    },
+    "build-release": {
+      "name": "build-release",
+      "command": "npm run build-release",
+      "runAtStart": false
+    },
+    "build-www": {
+      "name": "build-www",
+      "command": "npm run build-www",
+      "runAtStart": false
+    },
+    "build-types": {
+      "name": "build-types",
+      "command": "npm run build-types",
+      "runAtStart": false
+    },
+    "lint-flow": {
+      "name": "lint-flow",
+      "command": "npm run lint-flow",
+      "runAtStart": false
+    },
+    "clean": {
+      "name": "clean",
+      "command": "npm run clean",
+      "runAtStart": false
+    },
+    "extract-codes": {
+      "name": "extract-codes",
+      "command": "npm run extract-codes",
+      "runAtStart": false
+    },
+    "flow": {
+      "name": "flow",
+      "command": "npm run flow",
+      "runAtStart": false
+    },
+    "tsc": {
+      "name": "tsc",
+      "command": "npm run tsc",
+      "runAtStart": false
+    },
+    "tsc-extension": {
+      "name": "tsc-extension",
+      "command": "npm run tsc-extension",
+      "runAtStart": false
+    },
+    "tsc-watch": {
+      "name": "tsc-watch",
+      "command": "npm run tsc-watch",
+      "runAtStart": false
+    },
+    "collab": {
+      "name": "collab",
+      "command": "npm run collab",
+      "runAtStart": false
+    },
+    "validation": {
+      "name": "validation",
+      "command": "npm run validation",
+      "runAtStart": false
+    },
+    "test-unit": {
+      "name": "test-unit",
+      "command": "npm run test-unit",
+      "runAtStart": false
+    },
+    "test-unit-watch": {
+      "name": "test-unit-watch",
+      "command": "npm run test-unit-watch",
+      "runAtStart": false
+    },
+    "test-integration": {
+      "name": "test-integration",
+      "command": "npm run test-integration",
+      "runAtStart": false
+    },
+    "test-e2e-chromium": {
+      "name": "test-e2e-chromium",
+      "command": "npm run test-e2e-chromium",
+      "runAtStart": false
+    },
+    "test-e2e-firefox": {
+      "name": "test-e2e-firefox",
+      "command": "npm run test-e2e-firefox",
+      "runAtStart": false
+    },
+    "test-e2e-webkit": {
+      "name": "test-e2e-webkit",
+      "command": "npm run test-e2e-webkit",
+      "runAtStart": false
+    },
+    "test-e2e-plain-chromium": {
+      "name": "test-e2e-plain-chromium",
+      "command": "npm run test-e2e-plain-chromium",
+      "runAtStart": false
+    },
+    "test-e2e-plain-firefox": {
+      "name": "test-e2e-plain-firefox",
+      "command": "npm run test-e2e-plain-firefox",
+      "runAtStart": false
+    },
+    "test-e2e-plain-webkit": {
+      "name": "test-e2e-plain-webkit",
+      "command": "npm run test-e2e-plain-webkit",
+      "runAtStart": false
+    },
+    "test-e2e-legacy-chromium": {
+      "name": "test-e2e-legacy-chromium",
+      "command": "npm run test-e2e-legacy-chromium",
+      "runAtStart": false
+    },
+    "test-e2e-legacy-firefox": {
+      "name": "test-e2e-legacy-firefox",
+      "command": "npm run test-e2e-legacy-firefox",
+      "runAtStart": false
+    },
+    "test-e2e-legacy-webkit": {
+      "name": "test-e2e-legacy-webkit",
+      "command": "npm run test-e2e-legacy-webkit",
+      "runAtStart": false
+    },
+    "test-e2e-collab-chromium": {
+      "name": "test-e2e-collab-chromium",
+      "command": "npm run test-e2e-collab-chromium",
+      "runAtStart": false
+    },
+    "test-e2e-collab-firefox": {
+      "name": "test-e2e-collab-firefox",
+      "command": "npm run test-e2e-collab-firefox",
+      "runAtStart": false
+    },
+    "test-e2e-collab-webkit": {
+      "name": "test-e2e-collab-webkit",
+      "command": "npm run test-e2e-collab-webkit",
+      "runAtStart": false
+    },
+    "test-e2e-prod-chromium": {
+      "name": "test-e2e-prod-chromium",
+      "command": "npm run test-e2e-prod-chromium",
+      "runAtStart": false
+    },
+    "test-e2e-collab-prod-chromium": {
+      "name": "test-e2e-collab-prod-chromium",
+      "command": "npm run test-e2e-collab-prod-chromium",
+      "runAtStart": false
+    },
+    "test-e2e-ci-chromium": {
+      "name": "test-e2e-ci-chromium",
+      "command": "npm run test-e2e-ci-chromium",
+      "runAtStart": false
+    },
+    "test-e2e-ci-firefox": {
+      "name": "test-e2e-ci-firefox",
+      "command": "npm run test-e2e-ci-firefox",
+      "runAtStart": false
+    },
+    "test-e2e-ci-webkit": {
+      "name": "test-e2e-ci-webkit",
+      "command": "npm run test-e2e-ci-webkit",
+      "runAtStart": false
+    },
+    "test-e2e-collab-ci-chromium": {
+      "name": "test-e2e-collab-ci-chromium",
+      "command": "npm run test-e2e-collab-ci-chromium",
+      "runAtStart": false
+    },
+    "test-e2e-collab-ci-firefox": {
+      "name": "test-e2e-collab-ci-firefox",
+      "command": "npm run test-e2e-collab-ci-firefox",
+      "runAtStart": false
+    },
+    "test-e2e-collab-ci-webkit": {
+      "name": "test-e2e-collab-ci-webkit",
+      "command": "npm run test-e2e-collab-ci-webkit",
+      "runAtStart": false
+    },
+    "test-e2e-prod-ci-chromium": {
+      "name": "test-e2e-prod-ci-chromium",
+      "command": "npm run test-e2e-prod-ci-chromium",
+      "runAtStart": false
+    },
+    "test-e2e-collab-prod-ci-chromium": {
+      "name": "test-e2e-collab-prod-ci-chromium",
+      "command": "npm run test-e2e-collab-prod-ci-chromium",
+      "runAtStart": false
+    },
+    "debug-run-all": {
+      "name": "debug-run-all",
+      "command": "npm run debug-run-all",
+      "runAtStart": false
+    },
+    "run-all": {
+      "name": "run-all",
+      "command": "npm run run-all",
+      "runAtStart": false
+    },
+    "debug-test-e2e": {
+      "name": "debug-test-e2e",
+      "command": "npm run debug-test-e2e",
+      "runAtStart": false
+    },
+    "debug-test-e2e-chromium": {
+      "name": "debug-test-e2e-chromium",
+      "command": "npm run debug-test-e2e-chromium",
+      "runAtStart": false
+    },
+    "debug-test-e2e-prod-chromium": {
+      "name": "debug-test-e2e-prod-chromium",
+      "command": "npm run debug-test-e2e-prod-chromium",
+      "runAtStart": false
+    },
+    "debug-test-e2e-firefox": {
+      "name": "debug-test-e2e-firefox",
+      "command": "npm run debug-test-e2e-firefox",
+      "runAtStart": false
+    },
+    "debug-test-e2e-webkit": {
+      "name": "debug-test-e2e-webkit",
+      "command": "npm run debug-test-e2e-webkit",
+      "runAtStart": false
+    },
+    "debug-test-e2e-legacy": {
+      "name": "debug-test-e2e-legacy",
+      "command": "npm run debug-test-e2e-legacy",
+      "runAtStart": false
+    },
+    "debug-test-e2e-legacy-chromium": {
+      "name": "debug-test-e2e-legacy-chromium",
+      "command": "npm run debug-test-e2e-legacy-chromium",
+      "runAtStart": false
+    },
+    "debug-test-e2e-legacy-firefox": {
+      "name": "debug-test-e2e-legacy-firefox",
+      "command": "npm run debug-test-e2e-legacy-firefox",
+      "runAtStart": false
+    },
+    "debug-test-e2e-legacy-webkit": {
+      "name": "debug-test-e2e-legacy-webkit",
+      "command": "npm run debug-test-e2e-legacy-webkit",
+      "runAtStart": false
+    },
+    "debug-test-e2e-collab": {
+      "name": "debug-test-e2e-collab",
+      "command": "npm run debug-test-e2e-collab",
+      "runAtStart": false
+    },
+    "debug-test-e2e-collab-chromium": {
+      "name": "debug-test-e2e-collab-chromium",
+      "command": "npm run debug-test-e2e-collab-chromium",
+      "runAtStart": false
+    },
+    "debug-test-e2e-collab-firefox": {
+      "name": "debug-test-e2e-collab-firefox",
+      "command": "npm run debug-test-e2e-collab-firefox",
+      "runAtStart": false
+    },
+    "debug-test-e2e-collab-webkit": {
+      "name": "debug-test-e2e-collab-webkit",
+      "command": "npm run debug-test-e2e-collab-webkit",
+      "runAtStart": false
+    },
+    "debug-test-e2e-collab-legacy": {
+      "name": "debug-test-e2e-collab-legacy",
+      "command": "npm run debug-test-e2e-collab-legacy",
+      "runAtStart": false
+    },
+    "debug-test-e2e-collab-legacy-chromium": {
+      "name": "debug-test-e2e-collab-legacy-chromium",
+      "command": "npm run debug-test-e2e-collab-legacy-chromium",
+      "runAtStart": false
+    },
+    "debug-test-e2e-collab-legacy-firefox": {
+      "name": "debug-test-e2e-collab-legacy-firefox",
+      "command": "npm run debug-test-e2e-collab-legacy-firefox",
+      "runAtStart": false
+    },
+    "debug-test-e2e-collab-legacy-webkit": {
+      "name": "debug-test-e2e-collab-legacy-webkit",
+      "command": "npm run debug-test-e2e-collab-legacy-webkit",
+      "runAtStart": false
+    },
+    "debug-test-e2e-plain": {
+      "name": "debug-test-e2e-plain",
+      "command": "npm run debug-test-e2e-plain",
+      "runAtStart": false
+    },
+    "debug-test-e2e-plain-chromium": {
+      "name": "debug-test-e2e-plain-chromium",
+      "command": "npm run debug-test-e2e-plain-chromium",
+      "runAtStart": false
+    },
+    "debug-test-e2e-plain-firefox": {
+      "name": "debug-test-e2e-plain-firefox",
+      "command": "npm run debug-test-e2e-plain-firefox",
+      "runAtStart": false
+    },
+    "debug-test-e2e-plain-webkit": {
+      "name": "debug-test-e2e-plain-webkit",
+      "command": "npm run debug-test-e2e-plain-webkit",
+      "runAtStart": false
+    },
+    "debug-test-e2e-plain-legacy": {
+      "name": "debug-test-e2e-plain-legacy",
+      "command": "npm run debug-test-e2e-plain-legacy",
+      "runAtStart": false
+    },
+    "debug-test-e2e-plain-legacy-chromium": {
+      "name": "debug-test-e2e-plain-legacy-chromium",
+      "command": "npm run debug-test-e2e-plain-legacy-chromium",
+      "runAtStart": false
+    },
+    "debug-test-e2e-plain-legacy-firefox": {
+      "name": "debug-test-e2e-plain-legacy-firefox",
+      "command": "npm run debug-test-e2e-plain-legacy-firefox",
+      "runAtStart": false
+    },
+    "debug-test-e2e-plain-legacy-webkit": {
+      "name": "debug-test-e2e-plain-legacy-webkit",
+      "command": "npm run debug-test-e2e-plain-legacy-webkit",
+      "runAtStart": false
+    },
+    "debug-test-unit": {
+      "name": "debug-test-unit",
+      "command": "npm run debug-test-unit",
+      "runAtStart": false
+    },
+    "lint": {
+      "name": "lint",
+      "command": "npm run lint",
+      "runAtStart": false
+    },
+    "prettier": {
+      "name": "prettier",
+      "command": "npm run prettier",
+      "runAtStart": false
+    },
+    "ci-check": {
+      "name": "ci-check",
+      "command": "npm run ci-check",
+      "runAtStart": false
+    },
+    "prettier:fix": {
+      "name": "prettier:fix",
+      "command": "npm run prettier:fix",
+      "runAtStart": false
+    },
+    "prepare-ci": {
+      "name": "prepare-ci",
+      "command": "npm run prepare-ci",
+      "runAtStart": false
+    },
+    "prepare-ci-prod": {
+      "name": "prepare-ci-prod",
+      "command": "npm run prepare-ci-prod",
+      "runAtStart": false
+    },
+    "prepare-release": {
+      "name": "prepare-release",
+      "command": "npm run prepare-release",
+      "runAtStart": false
+    },
+    "prepare": {
+      "name": "prepare",
+      "command": "npm run prepare",
+      "runAtStart": false
+    },
+    "prepare-www": {
+      "name": "prepare-www",
+      "command": "npm run prepare-www",
+      "runAtStart": false
+    },
+    "changelog": {
+      "name": "changelog",
+      "command": "npm run changelog",
+      "runAtStart": false
+    },
+    "increment-version": {
+      "name": "increment-version",
+      "command": "npm run increment-version",
+      "runAtStart": false
+    },
+    "update-changelog": {
+      "name": "update-changelog",
+      "command": "npm run update-changelog",
+      "runAtStart": false
+    },
+    "create-docs": {
+      "name": "create-docs",
+      "command": "npm run create-docs",
+      "runAtStart": false
+    },
+    "update-version": {
+      "name": "update-version",
+      "command": "npm run update-version",
+      "runAtStart": false
+    },
+    "update-tsconfig": {
+      "name": "update-tsconfig",
+      "command": "npm run update-tsconfig",
+      "runAtStart": false
+    },
+    "update-flowconfig": {
+      "name": "update-flowconfig",
+      "command": "npm run update-flowconfig",
+      "runAtStart": false
+    },
+    "create-www-stubs": {
+      "name": "create-www-stubs",
+      "command": "npm run create-www-stubs",
+      "runAtStart": false
+    },
+    "update-packages": {
+      "name": "update-packages",
+      "command": "npm run update-packages",
+      "runAtStart": false
+    },
+    "postversion": {
+      "name": "postversion",
+      "command": "npm run postversion",
+      "runAtStart": false
+    },
+    "publish-extension": {
+      "name": "publish-extension",
+      "command": "npm run publish-extension",
+      "runAtStart": false
+    },
+    "release": {
+      "name": "release",
+      "command": "npm run release",
+      "runAtStart": false
+    }
+  }
+}
